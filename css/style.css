@@ -43,11 +43,20 @@ body {
   opacity: 0.8;
 }
 
+.icon-space {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
 .sites {
   border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 220px;
   width: 282px;
+}
+
+.fill {
+  background-color: black;
 }
 
 .zoom {
@@ -84,27 +93,55 @@ body {
 }
 
 /* Media Queries */
+@media(min-width: 414px) {
+  .footer-space {
+    display: none;
+  }
+}
+
 @media(max-width: 768px) {
   .paragraph-vertical-adjust {
     padding-top: 50px;
   }
 }
 
-@media(min-width: 992px) {
-  .logo-control {
-    max-height: 195px;
+@media(min-width: 768px){
+  body,
+  .lead {
+    font-size: 1.3rem;
   }
 }
 
-@media(max-width: 992px) and (min-width: 768px) {
-  .logo-control {
-    max-height: 196px;
+@media(min-width: 768px) and (max-width: 992px){
+  .adjust {
+    height: 117px;
   }
+}
+
+@media(min-width: 992px) and (max-width: 1200px){
+  .adjust {
+    height: 120px;
+  }
+}
+
+@media(min-width: 1200px){
+  .adjust {
+    height: 142px;
+  }
+
+  .icon {
+    font-size: 5rem;
+  }
+
+  .description {
+    font-size: 2.2rem;
+  }
+  
 }
 
 @media(min-width: 1199px) {
   .port-item {
-    padding: 3em !important;
+    padding: 2em !important;
   }
 } 
 
