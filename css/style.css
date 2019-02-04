@@ -33,6 +33,10 @@ body {
   font-weight: bold;
 }
 
+.card {
+  border-radius: 0px;
+}
+
 .description {
   font-size: 1.5rem;
   letter-spacing: 2.5px;
@@ -113,19 +117,19 @@ body {
 }
 
 @media(min-width: 768px) and (max-width: 992px){
-  .adjust {
+  .height-adjust {
     height: 117px;
   }
 }
 
 @media(min-width: 992px) and (max-width: 1200px){
-  .adjust {
+  .height-adjust {
     height: 120px;
   }
 }
 
 @media(min-width: 1200px){
-  .adjust {
+  .height-adjust {
     height: 142px;
   }
 
